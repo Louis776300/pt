@@ -1,0 +1,39 @@
+languagesystem DFLT dflt;
+
+
+# GPOS 
+
+
+lookup kernHorizontalKerninglookup0 {
+  lookupflag 0;
+} kernHorizontalKerninglookup0;
+
+feature kern {
+
+ script DFLT;
+     language dflt ;
+      lookup kernHorizontalKerninglookup0;
+} kern;
+
+@GDEF_Simple = [\A \B \C \D \DEL \E \F \G \H \I \J \K \L \M \N \O \P \Q \R \S \T \U \V \W \X \Y \Z \a 
+	\acute \ampersand \asciitilde \at \b \backslash \bar \braceleft \braceright 
+	\bracketleft \bracketright \c \cedilla \circumflex \colon \comma \d \dieresis \e 
+	\eight \ellipsis \emdash \endash \exclam \f \fi \five \fl \four \fraction \g \grave 
+	\guillemotleft \guillemotright \guilsinglleft \guilsinglright \h \hyphen \i \j 
+	\k \l \m \n \nine \o \one \p \parenleft \parenright \period \q \question 
+	\quotedblleft \quotedblright \quoteleft \quoteright \r \s \semicolon \seven \six 
+	\slash \space \t \three \tilde \two \u \underscore \v \w \x \y \z \zero \eacute \egrave 
+	\ecircumflex \asciicircum \Eacute \ae \agrave \aacute \acircumflex \atilde 
+	\adieresis \aring \ccedilla \edieresis \igrave \iacute \icircumflex \idieresis 
+	\ntilde \ograve \oacute \ocircumflex \otilde \odieresis \oslash \ugrave \uacute 
+	\ucircumflex \udieresis \yacute \ydieresis \Agrave \Aacute \Acircumflex \Atilde 
+	\Adieresis \Aring \AE \Ccedilla \Egrave \Ecircumflex \Edieresis \Igrave \Iacute 
+	\Icircumflex \Idieresis \Eth \Ntilde \Ograve \Oacute \Ocircumflex \Otilde 
+	\Odieresis \Oslash \Ugrave \Uacute \Ucircumflex \Udieresis \Yacute \degree \plus 
+	\asterisk \exclamdown \numbersign ];
+
+table GDEF {
+  GlyphClassDef @GDEF_Simple, , , ;
+
+} GDEF;
+

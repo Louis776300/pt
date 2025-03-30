@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /Icons/
+Disallow: /Fonts/
+Disallow: /Docs/
+
+Sitemap: https://louis-poissonnier-genot.fr/sitemap.xml 
